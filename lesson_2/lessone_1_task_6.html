@@ -25,18 +25,18 @@
             let lastDigit = +num[num.length - 1];
 
             if (lastDigit == 1) {
-                return 'рубль'
+                return 'рубль';
             }
             else if (lastDigit >= 2 && lastDigit <= 4) {
-                return 'рубля'
+                return 'рубля';
             }
             else if ((lastDigit >= 5 && lastDigit <= 9) || lastDigit == 0) {
-                return 'рублей'
+                return 'рублей';
             }
         }
 
         let money = prompt('Введите колличество денег:');
-        alert(`Ваша сумма в ${money} ${getCase(money)} успешно зачислена.`)
+        alert(`Ваша сумма в ${money} ${getCase(money)} успешно зачислена.`);
 
     </script>
 </body>
