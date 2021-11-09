@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict'
+        /*5. Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation),
+        где arg1, arg2 – значения аргументов, operation – строка с названием операции. В зависимости от
+        переданного значения операции (использовать switch) выполнить одну из арифметических
+        операций
+        (использовать функции из задания 4) и вернуть полученное значение.
+        */
+
+
+        function addition(a, b) {
+            return a + b;
+        }
+
+
+        function multiplication(a, b) {
+            return a * b;
+        }
+
+		
+        function subtraction(a, b) {
+            return a - b;
+        }
+
+		
+        function division(a, b) {
+            return a / b;
+        }
+
+
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case '+':
+                    return addition(arg1, arg2);
+                case '*':
+                    return multiplication(arg1, arg2);
+                case '-':
+                    return subtraction(arg1, arg2);
+                case '/':
+                    return division(arg1, arg2);
+            }
+        }
+        while (true) {
+            let num1 = +prompt('Введите первый операнд:');
+            let num2 = +prompt('Введите второй операнд:');
+            let oper = prompt('Введите арифметическую операцию:');
+            alert(mathOperation(num1, num2, oper));
+            let stop = prompt('Для отмены введите "stop", для продолжение любую клавишу');
+            if (stop == 'stop') {
+                break;
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>
