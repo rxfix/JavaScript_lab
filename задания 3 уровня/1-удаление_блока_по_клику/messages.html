@@ -44,10 +44,16 @@
     -->
 
     <script>
-
+        'use strict';
+        let bts = document.querySelectorAll('button');
+        bts.forEach(function (button) {
+            button.addEventListener('click', closeClickHandler);
+        });
+        console.log(bts)
         function closeClickHandler(event) {
-           
+            event.currentTarget.parentNode.style.display = 'none';
         }
+
     </script>
 </body>
 
