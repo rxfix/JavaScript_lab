@@ -9,6 +9,7 @@ body {
     box-shadow: 0 0 10px gray;
     padding: 15px;
     box-sizing: border-box;
+    /* background: chartreuse; */
 }
 
 img {
@@ -23,3 +24,10 @@ img {
     margin-bottom: 10px;
     border-bottom: 1px solid gray;
 }
+/* .scrollCheck {
+    position: fixed;
+    top: 130px;
+width: 200px;
+height: 100px;
+background: lightblue;
+} */
